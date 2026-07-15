@@ -1,0 +1,367 @@
+/* ==========================================================
+   RISING WATERS - FLOOD PREDICTION SYSTEM
+   style.css
+========================================================== */
+
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================
+   BODY
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    box-shadow:0 3px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    font-size:17px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#ffd43b !important;
+}
+
+/* Active Navigation */
+
+.nav-link.active{
+    color:#ffd43b !important;
+    font-weight:bold;
+}
+
+/* ==========================
+   HERO SECTION
+========================== */
+
+section{
+    padding:60px 0;
+}
+
+.display-4{
+    font-weight:700;
+    color:#0d6efd;
+}
+
+.lead{
+    font-size:20px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.card-header{
+    border-radius:15px 15px 0 0 !important;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+    border-radius:10px;
+    font-weight:600;
+    padding:12px 28px;
+}
+
+.btn-primary{
+    background:#0d6efd;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#084298;
+}
+
+.btn-success:hover{
+    background:#146c43;
+}
+
+.btn-secondary:hover{
+    background:#565e64;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+form{
+    margin-top:20px;
+}
+
+.form-label{
+    font-weight:600;
+}
+
+.form-control{
+    border-radius:10px;
+    padding:12px;
+    border:1px solid #ced4da;
+}
+
+.form-control:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 8px rgba(13,110,253,.25);
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table{
+    margin-top:20px;
+}
+
+.table th{
+    width:35%;
+    background:#0d6efd;
+    color:white;
+}
+
+.table td{
+    background:white;
+}
+
+/* ==========================
+   ALERTS
+========================== */
+
+.alert{
+    border-radius:10px;
+    font-weight:600;
+}
+
+/* ==========================================================
+   RESULT PAGE
+========================================================== */
+
+.list-group-item{
+    font-size:16px;
+    padding:12px;
+}
+
+.list-group-item:hover{
+    background:#f8f9fa;
+}
+
+.text-danger{
+    font-weight:bold;
+}
+
+.text-success{
+    font-weight:bold;
+}
+
+.text-primary{
+    font-weight:700;
+}
+
+/* ==========================================================
+   PROBABILITY CARDS
+========================================================== */
+
+.border-danger{
+    border:2px solid #dc3545 !important;
+}
+
+.border-success{
+    border:2px solid #198754 !important;
+}
+
+.card h2{
+    font-size:32px;
+    font-weight:bold;
+}
+
+.card h4{
+    font-weight:600;
+}
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.img-fluid{
+    border-radius:15px;
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+    background:#212529;
+    color:white;
+    margin-top:50px;
+}
+
+footer h5{
+    font-weight:bold;
+}
+
+footer p{
+    margin-bottom:8px;
+}
+
+footer hr{
+    border-color:#6c757d;
+}
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+.card{
+    animation:fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.btn{
+    transition:all 0.3s ease;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* ==========================================================
+   RESPONSIVE DESIGN
+========================================================== */
+
+@media (max-width:992px){
+
+    .display-4{
+        font-size:40px;
+    }
+
+    .lead{
+        font-size:18px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .navbar-brand{
+        font-size:22px;
+    }
+
+    .display-4{
+        font-size:34px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:26px;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .card{
+        margin-bottom:20px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .display-4{
+        font-size:28px;
+    }
+
+    .lead{
+        font-size:16px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+}
+
+/* ==========================================================
+   CUSTOM SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#084298;
+}
+
+/* ==========================================================
+   END OF FILE
+========================================================== */

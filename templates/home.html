@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rising Waters | Flood Prediction System</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ==============================
+     NAVIGATION BAR
+================================ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+            🌊 Rising Waters
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/form">Prediction</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ==============================
+     HERO SECTION
+================================ -->
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold text-primary">
+
+                    Rising Waters
+
+                </h1>
+
+                <h3 class="mb-4">
+
+                    AI Based Flood Prediction System
+
+                </h3>
+
+                <p class="lead">
+
+                    Rising Waters is a Machine Learning based Flood Prediction
+                    System developed to predict whether flood conditions are
+                    likely using environmental and rainfall parameters.
+
+                </p>
+
+                <p>
+
+                    The system analyses important weather and rainfall
+                    information to help users identify possible flood risks
+                    before severe conditions occur.
+
+                </p>
+
+                <a href="/form" class="btn btn-primary btn-lg mt-3">
+
+                    Start Prediction
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+
+                <img
+                    src="{{ url_for('static', filename='images/flood.png') }}"
+                    class="img-fluid"
+                    alt="Flood Prediction">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==============================
+     PROJECT OVERVIEW
+================================ -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-5">
+
+            Project Overview
+
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="text-primary">
+
+                            Objective
+
+                        </h4>
+
+                        <p>
+
+                            Predict flood occurrence using machine learning
+                            algorithms trained on rainfall, humidity,
+                            cloud cover and seasonal weather data.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="text-success">
+
+                            Technologies
+
+                        </h4>
+
+                        <ul>
+
+                            <li>Python</li>
+
+                            <li>Flask</li>
+
+                            <li>Machine Learning</li>
+
+                            <li>Pandas</li>
+
+                            <li>Scikit-Learn</li>
+
+                            <li>XGBoost</li>
+
+                            <li>Bootstrap 5</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card shadow h-100">
+
+                    <div class="card-body">
+
+                        <h4 class="text-danger">
+
+                            Dataset
+
+                        </h4>
+
+                        <p>
+
+                            The prediction model uses environmental
+                            parameters including:
+
+                        </p>
+
+                        <ul>
+
+                            <li>Temperature</li>
+
+                            <li>Humidity</li>
+
+                            <li>Cloud Cover</li>
+
+                            <li>Annual Rainfall</li>
+
+                            <li>Seasonal Rainfall</li>
+
+                            <li>Average June Rainfall</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
